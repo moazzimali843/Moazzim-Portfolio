@@ -229,24 +229,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
 
               {/* Top Badges */}
-              <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                <Badge variant="gradient" size="md">
-                  Digital Twin
-                </Badge>
-                <Badge variant="purple" size="md">
-                  Voice Clone
-                </Badge>
-                <Badge variant="cyan" size="md">
-                  Lip Sync
-                </Badge>
-                <Badge variant="blue" size="md">
-                  AI Video
-                </Badge>
-              </div>
-
-              <div className="absolute bottom-4 left-4 text-xs font-mono text-zinc-300 bg-black/60 px-3 py-1 rounded-md border border-white/10">
-                Duration: {FEATURED_SHOWCASE_VIDEO.duration}
-              </div>
+              {/* Removed badges as requested */}
             </div>
 
             {/* Video Metadata Sidebar */}

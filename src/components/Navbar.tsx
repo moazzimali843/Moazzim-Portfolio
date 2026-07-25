@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-purple-500/60 shadow-[0_0_20px_rgba(147,51,234,0.5)] group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img
-                src="/moazzim_profile.jpg"
+                src="/moazzim_profile.png"
                 alt="Moazzim"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

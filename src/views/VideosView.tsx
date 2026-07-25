@@ -149,23 +149,8 @@ export const VideosView: React.FC<VideosViewProps> = ({
                   </div>
                 </div>
 
-                {/* Category Badge Top Left */}
-                <div className="absolute top-3 left-3 flex gap-1.5">
-                  <Badge variant="purple" size="sm">
-                    {video.category}
-                  </Badge>
-                  {video.aspectRatio === '9:16' && (
-                    <Badge variant="cyan" size="sm">
-                      Reel 9:16
-                    </Badge>
-                  )}
-                </div>
-
-                {/* Duration Badge Bottom Right */}
-                <div className="absolute bottom-3 right-3 text-[11px] font-mono text-zinc-200 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded border border-white/10 flex items-center gap-1">
-                  <Clock className="w-3 h-3 text-purple-400" />
-                  <span>{video.duration}</span>
-                </div>
+                {/* Category Badge Top Left - Removed */}
+                {/* Duration Badge Bottom Right - Removed */}
               </div>
 
               {/* Card Body */}
@@ -174,20 +159,6 @@ export const VideosView: React.FC<VideosViewProps> = ({
                   <h3 className="text-base font-bold text-white group-hover:text-purple-300 transition-colors line-clamp-2">
                     {video.title}
                   </h3>
-                  <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed">
-                    {video.description}
-                  </p>
-                </div>
-
-                {/* Tools Used Tags */}
-                <div className="pt-3 border-t border-white/10 space-y-2">
-                  <div className="flex flex-wrap gap-1.5">
-                    {video.toolsUsed.map((tool, i) => (
-                      <Badge key={i} variant="gray" size="sm">
-                        {tool}
-                      </Badge>
-                    ))}
-                  </div>
                 </div>
               </div>
             </motion.div>

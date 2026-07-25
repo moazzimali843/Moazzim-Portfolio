@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({
             >
               <div className="w-10 h-10 rounded-full overflow-hidden border border-purple-500/50 shadow-[0_0_15px_rgba(147,51,234,0.3)] group-hover:scale-105 transition-transform duration-300 shrink-0">
                 <img
-                  src="/moazzim_profile.jpg"
+                  src="/moazzim_profile.png"
                   alt="Moazzim"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

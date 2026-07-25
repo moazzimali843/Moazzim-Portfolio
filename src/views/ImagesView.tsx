@@ -140,9 +140,6 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
                 {/* Gradient Dark Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
                   <div className="flex items-center justify-between">
-                    <Badge variant="blue" size="sm">
-                      {img.category}
-                    </Badge>
                     <div className="p-2 rounded-full bg-black/60 text-white backdrop-blur-md border border-white/20">
                       <Maximize2 className="w-4 h-4" />
                     </div>
@@ -152,19 +149,6 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
                     <h3 className="text-sm font-bold text-white line-clamp-1">
                       {img.title}
                     </h3>
-                    <p className="text-[11px] text-zinc-300 line-clamp-2">
-                      {img.description}
-                    </p>
-                    <div className="pt-2 flex flex-wrap gap-1">
-                      {img.toolsUsed.map((tool, i) => (
-                        <span
-                          key={i}
-                          className="text-[10px] bg-white/15 text-zinc-200 px-2 py-0.5 rounded"
-                        >
-                          {tool}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -174,7 +158,6 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
                 <div className="text-xs font-semibold text-white truncate">
                   {img.title}
                 </div>
-                <div className="text-[10px] text-zinc-400">{img.category}</div>
               </div>
             </motion.div>
           ))}
