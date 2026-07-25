@@ -1,0 +1,6 @@
+{
+  "name": "Moazzim AI Studio",
+  "description": "Portfolio for AI Content Production & Automation Specialist - AI Avatars, Digital Twins, Voice Cloning, AI Video & Automations",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
