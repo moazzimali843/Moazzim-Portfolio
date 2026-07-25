@@ -38,13 +38,16 @@ export const Footer: React.FC<FooterProps> = ({
               onClick={() => handleNav('home')}
               className="flex items-center space-x-3 cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 p-0.5 shadow-[0_0_20px_rgba(168,85,247,0.3)]">
-                <div className="w-full h-full bg-[#08080a] rounded-[10px] flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-purple-400" />
-                </div>
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-purple-500/50 shadow-[0_0_15px_rgba(147,51,234,0.3)] group-hover:scale-105 transition-transform duration-300 shrink-0">
+                <img
+                  src="/moazzim_profile.jpg"
+                  alt="Moazzim"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="text-xl font-bold tracking-tight text-white">
-                MOAZZIM <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">AI STUDIO</span>
+                Moazzim <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">AI Studio</span>
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-sm">
@@ -197,7 +200,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[10px] text-gray-500 uppercase tracking-widest font-bold gap-4">
-          <span>© 2026 MOAZZIM AI STUDIO</span>
+          <span>© 2026 Moazzim AI Studio</span>
           <div className="flex items-center space-x-6">
             <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               LinkedIn

@@ -69,11 +69,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleNavClick('home')}
             className="flex items-center space-x-2.5 cursor-pointer group"
           >
-            <div className="w-8 h-8 rounded-full overflow-hidden border border-purple-500/50 shadow-[0_0_15px_rgba(147,51,234,0.4)] group-hover:scale-105 transition-transform duration-300">
+            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-purple-500/60 shadow-[0_0_20px_rgba(147,51,234,0.5)] group-hover:scale-105 transition-transform duration-300 shrink-0">
               <img
                 src="/moazzim_profile.jpg"
                 alt="Moazzim"
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div>
