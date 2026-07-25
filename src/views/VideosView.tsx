@@ -104,7 +104,6 @@ export const VideosView: React.FC<VideosViewProps> = ({
             Showing <strong className="text-white">{filteredVideos.length}</strong> of{' '}
             <strong className="text-white">{VIDEOS_DATA.length}</strong> videos
           </span>
-          <span className="text-purple-400 font-mono">12 Total Portfolio Placeholders</span>
         </div>
       </div>
 

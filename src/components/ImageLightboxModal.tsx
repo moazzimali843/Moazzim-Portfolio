@@ -91,65 +91,6 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
               </p>
             </div>
 
-            {/* Prompt Box */}
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-wider text-purple-400 flex items-center gap-1">
-                  <Terminal className="w-3.5 h-3.5" /> Generative AI Prompt
-                </span>
-                <button
-                  onClick={handleCopyPrompt}
-                  className="flex items-center space-x-1 text-xs text-zinc-400 hover:text-white bg-white/5 hover:bg-white/10 px-2.5 py-1 rounded-md transition-colors border border-white/10"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="w-3.5 h-3.5 text-green-400" />
-                      <span className="text-green-400">Copied!</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-3.5 h-3.5" />
-                      <span>Copy Prompt</span>
-                    </>
-                  )}
-                </button>
-              </div>
-              <div className="p-3 bg-black/60 rounded-xl border border-white/10 font-mono text-xs text-zinc-300 leading-relaxed max-h-32 overflow-y-auto selection:bg-purple-900">
-                {image.prompt}
-              </div>
-            </div>
-
-            {/* Models & Tools */}
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400 block mb-2 flex items-center gap-1">
-                <Layers className="w-3.5 h-3.5 text-blue-400" /> Models & Platforms
-              </span>
-              <div className="flex flex-wrap gap-2">
-                {image.toolsUsed.map((tool, idx) => (
-                  <Badge key={idx} variant="cyan" size="sm">
-                    {tool}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Footer */}
-          <div className="pt-4 border-t border-white/10 space-y-3">
-            <div className="flex items-center gap-1.5 text-xs text-zinc-400">
-              <Sparkles className="w-4 h-4 text-purple-400 shrink-0" />
-              <span>Available for high-resolution brand campaigns & commercial licensing</span>
-            </div>
-            <button
-              onClick={() => {
-                onClose();
-                onOpenConsultation();
-              }}
-              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 text-white font-semibold text-sm hover:opacity-95 transition-all shadow-[0_0_20px_rgba(168,85,247,0.3)] flex items-center justify-center space-x-2"
-            >
-              <Calendar className="w-4 h-4" />
-              <span>Order Custom AI Visuals</span>
-            </button>
           </div>
         </div>
       </div>

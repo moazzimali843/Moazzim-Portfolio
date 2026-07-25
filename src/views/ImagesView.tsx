@@ -100,7 +100,6 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
             Showing <strong className="text-white">{filteredImages.length}</strong> of{' '}
             <strong className="text-white">{IMAGES_DATA.length}</strong> visual assets
           </span>
-          <span className="text-blue-400 font-mono">30 High-Resolution Assets</span>
         </div>
       </div>
 
