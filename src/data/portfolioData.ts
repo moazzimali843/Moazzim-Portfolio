@@ -8,6 +8,18 @@ import {
   ProcessStep,
 } from '../types';
 
+/**
+ * HOW TO ADD YOUR OWN CUSTOM VIDEOS & IMAGES TO THE WEBSITE:
+ *
+ * 1. Put your video files (.mp4, .webm) into the folder: public/videos/
+ *    e.g. public/videos/my_demo_video.mp4
+ *    In this file, set: videoUrl: '/videos/my_demo_video.mp4'
+ *
+ * 2. Put your image/photo files (.jpg, .png, .webp) into the folder: public/images/
+ *    e.g. public/images/my_thumbnail.jpg
+ *    In this file, set: thumbnail: '/images/my_thumbnail.jpg' or imageUrl: '/images/my_photo.jpg'
+ */
+
 export const FEATURED_SHOWCASE_VIDEO: VideoItem = {
   id: 'featured-1',
   title: 'Hyper-Realistic AI Digital Twin – Executive Avatar Series',
