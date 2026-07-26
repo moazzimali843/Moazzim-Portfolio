@@ -5,7 +5,6 @@ export interface VideoItem {
   title: string;
   category: 'Digital Twins' | 'Talking Head' | 'Marketing' | 'Commercials' | 'Social Media';
   description: string;
-  thumbnail: string;
   videoUrl: string;
   toolsUsed: string[];
   duration: string;

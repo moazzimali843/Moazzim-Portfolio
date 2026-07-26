@@ -89,7 +89,6 @@ export const VideoModal: React.FC<VideoModalProps> = ({
           <video
             ref={videoRef}
             src={video.videoUrl}
-            poster={video.thumbnail}
             autoPlay
             loop
             muted={isMuted}

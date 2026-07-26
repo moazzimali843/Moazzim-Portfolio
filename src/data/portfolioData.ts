@@ -16,8 +16,10 @@ import {
  *    In this file, set: videoUrl: '/videos/my_demo_video.mp4'
  *
  * 2. Put your image/photo files (.jpg, .png, .webp) into the folder: public/images/
- *    e.g. public/images/my_thumbnail.jpg
- *    In this file, set: thumbnail: '/images/my_thumbnail.jpg' or imageUrl: '/images/my_photo.jpg'
+ *    e.g. public/images/my_photo.jpg
+ *    In this file, set: imageUrl: '/images/my_photo.jpg'
+ *
+ * Video thumbnails are generated automatically from each video file — no separate thumbnail needed.
  */
 
 export const FEATURED_SHOWCASE_VIDEO: VideoItem = {
@@ -25,7 +27,6 @@ export const FEATURED_SHOWCASE_VIDEO: VideoItem = {
   title: 'Intro Showcase',
   category: 'Featured',
   description: 'Featured video showcase',
-  thumbnail: '/images/Real%20Time%20Voice%20Agent.png',
   videoUrl: '/videos/Sample%20Intro.mov',
   toolsUsed: [],
   aspectRatio: '16:9',
@@ -39,7 +40,6 @@ export const VIDEOS_DATA: VideoItem[] = [
     title: 'Assessment Module',
     category: 'Learning',
     description: '',
-    thumbnail: '/images/Gemini_Generated_Image_qv6240qv6240qv62.png',
     videoUrl: '/videos/Assessment%20Module.mp4',
     toolsUsed: [],
     aspectRatio: '16:9',
@@ -49,7 +49,6 @@ export const VIDEOS_DATA: VideoItem[] = [
     title: 'Learning Module',
     category: 'Learning',
     description: '',
-    thumbnail: '/images/Gemini_Generated_Image_xknac2xknac2xkna.png',
     videoUrl: '/videos/Learning%20Module.mp4',
     toolsUsed: [],
     aspectRatio: '16:9',
@@ -59,7 +58,6 @@ export const VIDEOS_DATA: VideoItem[] = [
     title: 'Muntaha ki dost',
     category: 'Production',
     description: '',
-    thumbnail: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(2).jpeg',
     videoUrl: '/videos/Muntaha%20ki%20dost.mp4',
     toolsUsed: [],
     aspectRatio: '16:9',
@@ -69,7 +67,6 @@ export const VIDEOS_DATA: VideoItem[] = [
     title: 'Project Showcase',
     category: 'Project',
     description: '',
-    thumbnail: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(3).jpeg',
     videoUrl: '/videos/90f3b040-66d9-4aed-8480-8ecbaf34566e_final.mov',
     toolsUsed: [],
     aspectRatio: '16:9',
@@ -88,28 +85,8 @@ export const IMAGES_DATA: ImageItem[] = [
     aspectRatio: 'portrait',
   },
   {
-    id: 'img-2',
-    title: 'ChatGPT Generated Image',
-    category: 'AI Generation',
-    description: '',
-    imageUrl: '/images/ChatGPT%20Image%20Jun%2020%2C%202026%2C%2012_46_03%20AM.png',
-    prompt: '',
-    toolsUsed: [],
-    aspectRatio: 'landscape',
-  },
-  {
-    id: 'img-3',
-    title: 'Gemini Generated Image 1',
-    category: 'AI Generation',
-    description: '',
-    imageUrl: '/images/Gemini_Generated_Image_qv6240qv6240qv62.png',
-    prompt: '',
-    toolsUsed: [],
-    aspectRatio: 'landscape',
-  },
-  {
     id: 'img-4',
-    title: 'Gemini Generated Image 2',
+    title: 'AI Voice Agent – Office Workspace Concept',
     category: 'AI Generation',
     description: '',
     imageUrl: '/images/Gemini_Generated_Image_xknac2xknac2xkna.png',
@@ -119,7 +96,7 @@ export const IMAGES_DATA: ImageItem[] = [
   },
   {
     id: 'img-5',
-    title: 'WhatsApp Showcase 2',
+    title: 'Sawa Hub – Login Screen',
     category: 'Gallery',
     description: '',
     imageUrl: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(2).jpeg',
@@ -129,7 +106,7 @@ export const IMAGES_DATA: ImageItem[] = [
   },
   {
     id: 'img-6',
-    title: 'WhatsApp Showcase 3',
+    title: 'Sawa Hub – Onboarding Welcome',
     category: 'Gallery',
     description: '',
     imageUrl: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(3).jpeg',
@@ -139,7 +116,7 @@ export const IMAGES_DATA: ImageItem[] = [
   },
   {
     id: 'img-7',
-    title: 'WhatsApp Showcase 4',
+    title: 'Sawa Hub – Meetups Home Screen',
     category: 'Gallery',
     description: '',
     imageUrl: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(4).jpeg',
@@ -149,7 +126,7 @@ export const IMAGES_DATA: ImageItem[] = [
   },
   {
     id: 'img-8',
-    title: 'WhatsApp Showcase 5',
+    title: 'Sawa Hub – Find People Map View',
     category: 'Gallery',
     description: '',
     imageUrl: '/images/WhatsApp%20Image%202026-01-20%20at%2016.11.11%20(5).jpeg',

@@ -8,6 +8,7 @@ import {
   TESTIMONIALS_DATA,
 } from '../data/portfolioData';
 import { Badge } from '../components/Badge';
+import { VideoThumbnail } from '../components/VideoThumbnail';
 import {
   Play,
   ArrowRight,
@@ -214,8 +215,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
               className="lg:col-span-7 relative min-h-[320px] sm:min-h-[420px] bg-black cursor-pointer overflow-hidden"
               onClick={() => onOpenVideoModal(FEATURED_SHOWCASE_VIDEO)}
             >
-              <img
-                src={FEATURED_SHOWCASE_VIDEO.thumbnail}
+              <VideoThumbnail
+                src={FEATURED_SHOWCASE_VIDEO.videoUrl}
                 alt={FEATURED_SHOWCASE_VIDEO.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
               />
