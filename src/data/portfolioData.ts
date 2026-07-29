@@ -7,6 +7,7 @@ import {
   Testimonial,
   ProcessStep,
 } from '../types';
+import { ADDITIONAL_GALLERY_IMAGES } from './additionalGalleryImages';
 
 /**
  * HOW TO ADD YOUR OWN CUSTOM VIDEOS & IMAGES TO THE WEBSITE:
@@ -134,6 +135,7 @@ export const IMAGES_DATA: ImageItem[] = [
     toolsUsed: [],
     aspectRatio: 'portrait',
   },
+  ...ADDITIONAL_GALLERY_IMAGES,
 ];
 
 export const CORE_SERVICES: ServiceItem[] = [
