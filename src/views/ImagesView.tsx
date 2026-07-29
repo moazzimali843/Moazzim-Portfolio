@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ImageItem } from '../types';
 import { IMAGES_DATA } from '../data/portfolioData';
+import { assetUrl } from '../utils/assetUrl';
 import { Image as ImageIcon, Maximize2 } from 'lucide-react';
 
 interface ImagesViewProps {
@@ -42,7 +43,7 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
           >
             <div className="relative overflow-hidden bg-black">
               <img
-                src={img.imageUrl}
+                src={assetUrl(img.imageUrl)}
                 alt={img.title}
                 loading="lazy"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"

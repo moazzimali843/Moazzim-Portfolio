@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -35,6 +37,8 @@ jobs:
         run: npm ci || npm install
 
       - name: Build
+        env:
+          GITHUB_PAGES: 'true'
         run: npm run build
 
       - name: Setup Pages

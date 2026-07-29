@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { VideoItem } from '../types';
+import { assetUrl } from '../utils/assetUrl';
 import { Badge } from './Badge';
 import {
   X,
@@ -88,7 +89,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({
         <div className="relative bg-black flex items-center justify-center overflow-hidden group min-h-[280px] sm:min-h-[380px]">
           <video
             ref={videoRef}
-            src={video.videoUrl}
+            src={assetUrl(video.videoUrl)}
             autoPlay
             loop
             muted={isMuted}

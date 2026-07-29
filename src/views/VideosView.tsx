@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { VideoItem } from '../types';
 import { VIDEOS_DATA } from '../data/portfolioData';
 import { VideoThumbnail } from '../components/VideoThumbnail';
+import { assetUrl } from '../utils/assetUrl';
 import { Play, Video } from 'lucide-react';
 
 interface VideosViewProps {
@@ -44,7 +45,7 @@ export const VideosView: React.FC<VideosViewProps> = ({
             {/* Card Video Preview & Play Overlay */}
             <div className="relative aspect-video bg-black overflow-hidden">
               <VideoThumbnail
-                src={video.videoUrl}
+                src={assetUrl(video.videoUrl)}
                 alt={video.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
               />

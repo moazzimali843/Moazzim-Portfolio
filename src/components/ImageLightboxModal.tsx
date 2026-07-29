@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ImageItem } from '../types';
+import { assetUrl } from '../utils/assetUrl';
 import { X, Maximize2 } from 'lucide-react';
 
 interface ImageLightboxModalProps {
@@ -37,7 +38,7 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
           onClick={() => setIsZoomed(!isZoomed)}
         >
           <img
-            src={image.imageUrl}
+            src={assetUrl(image.imageUrl)}
             alt={image.title}
             className="max-h-[85vh] w-auto object-contain rounded-lg shadow-2xl transition-all duration-300"
           />

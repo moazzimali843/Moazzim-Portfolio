@@ -9,6 +9,7 @@ import {
 } from '../data/portfolioData';
 import { Badge } from '../components/Badge';
 import { VideoThumbnail } from '../components/VideoThumbnail';
+import { assetUrl } from '../utils/assetUrl';
 import {
   Play,
   ArrowRight,
@@ -216,7 +217,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               onClick={() => onOpenVideoModal(FEATURED_SHOWCASE_VIDEO)}
             >
               <VideoThumbnail
-                src={FEATURED_SHOWCASE_VIDEO.videoUrl}
+                src={assetUrl(FEATURED_SHOWCASE_VIDEO.videoUrl)}
                 alt={FEATURED_SHOWCASE_VIDEO.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
               />

@@ -6,6 +6,3 @@ coverage/
 *.log
 .env*
 !.env.example
-# Large video files
-public/videos/*.mp4
-public/videos/*.mov
