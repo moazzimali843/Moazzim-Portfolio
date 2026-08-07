@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ImageItem } from '../types';
 import { IMAGES_DATA } from '../data/portfolioData';
 import { assetUrl } from '../utils/assetUrl';
+import { shuffleArray } from '../utils/shuffleArray';
 import { Image as ImageIcon, Maximize2 } from 'lucide-react';
 
 interface ImagesViewProps {
@@ -14,6 +15,8 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
   onOpenImageModal,
   onOpenConsultation,
 }) => {
+  const [shuffledImages] = useState(() => shuffleArray(IMAGES_DATA));
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 space-y-12">
       {/* Header */}
@@ -32,7 +35,7 @@ export const ImagesView: React.FC<ImagesViewProps> = ({
 
       {/* Masonry Style Pinterest Grid */}
       <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
-        {IMAGES_DATA.map((img, idx) => (
+        {shuffledImages.map((img, idx) => (
           <motion.div
             key={img.id}
             initial={{ opacity: 0, y: 20 }}
